@@ -17,7 +17,7 @@ def hangman():
     total_chances = len(word) + 3 # total chance to the player
 
     while len(word_letters) > 0 and total_chances > 0:
-        print_word = [letter if letter in used_letters else "-" for letter in word] # create the word
+        print_word = [letter if letter in used_letters else "-" for letter in word]  # create the word
         list_to_str = "".join(print_word)
         print(f'This is the word: {list_to_str}')
         print(f'you have {total_chances} chances left in the game')
